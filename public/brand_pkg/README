@@ -1,0 +1,30 @@
+BiscuitHost Brand Package
+
+Dated 23 October 2021
+
+Assembled by Garret Stand
+
+Trademarks designed and executed by Mark Stand Creative (markstandcreative.com)
+
+The MSC logo and "Mark Stand Creative" is Copyright © 2014-present Mark Stand Creative, LLC. All rights reserved. The BiscuitHost word mark, logo and secondary layout is Copyright © 2021-present BiscuitHost. All rights reserved.
+
+Structure:
+
+│Root
+┝ 📄 style_guide.pdf (Primary style guide assembled by MSC)
+├ 📄 color_palette_final.pdf (Color pallete for use with the brand
+├ 📁 SVG (contains all brand combinations in SVG vector file format)
+├ 📁 PNG (contains all brand combinations in PNG raster file format)
+├ 📁 JPEG (contains all brand combinations featured in the style guide, see below)
+
+Design info:
+
+• All filenames are in the format "layout_color". 
+
+• Accent 1 is regarded as the primary color scheme used by default, but if required from color conflicts or the likes, accents 2 and 3 may be used. Black and white should be used only in events where the color logo may not fit with the aesthetic and/or conflict with the background and cannot be resolved with the background use design (see below)
+
+• Our main layout used is the primary mark—denoted on files prefixed "primary"—and should be used where ascetically possible. Primary horizontal set—denoted on files prefixed "primary_horizontal"—should be used in vertically restricted situations or anywhere where the vertical set primary mark can't be used. The secondary mark—denoted on files prefixed "secondary"—should be used in the event where a compressed look is necessary but the word mark or primary marks haven't been featured or made visible prior to its appearance. The wordmark and icon should only be independently used if necessary for aesthetic reasons AND if both the logo and the word mark have both been displayed in some form, whether it be the primary or secondary layouts, somewhere in the design.
+
+• Any files suffixed with "bguse" and "monobguse" are designed for use as backgrounds for photographs or other distinguishable backgrounds where a border may be necessary. Please refer to the Style Guide (styleguide.pdf) located in the root of this package for an example of use. 
+
+• SVGs should be used when at all possible as to prevent pixelation and allow infinite upscaling to any size. They should also be used when creating custom logo files as to ensure scaling will not interfere with the design or create artifacts. The PNGs should only be used where the SVGs cannot be used. The JPEGs are only included for exemplary reasons for how to implement the brand and it is highly ill-advised that the JPEGs are used unless absolutely necessary and 
