@@ -21,7 +21,7 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">About Nullify</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/Nullify.svg" width="500%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/null.svg" width="500%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
                         <p>Hello! I am Kieran Wittstruck! I am a Highschooler that goes to Innovation Academy in Alpharetta Georgia. I have been working with computer hardware since I was 5 years old, and I recently have been working on cybersecurity and Artifical Intellegence. Recently I have been selected as a semifinalist for the Governors Honors Program in the Computer Science and Engineering area. This website is a portfolio of all of the things I have worked on as well as a testing area for my code, software, and Artifical Intellegence models that I have fine-tuned. </p> 
