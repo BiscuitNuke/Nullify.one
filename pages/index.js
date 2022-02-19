@@ -1,5 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
 import styles from '../styles/Home.module.css'; 
-
 export default function Home() {
   return ( 
         <main className="d-flex flex-column justify-content-around align-items-center">
@@ -11,11 +11,10 @@ export default function Home() {
             </div> 
 
             <div className="container p-5">
-                <p className="h2 mb-4">Nullify.one</p> 
+                <p className="h2 mb-4">Click on the top bars to look at other pages!</p> 
                 <hr></hr>
                 <p>
-                    Made by Kieran Wittstruck. Please do not take content without asking first!
-                    @BiscuitNuke on github!
+                    Made by Kieran Wittstruck, Template from BiscuitHost old website!
                 </p> 
             </div>
         </main> 
