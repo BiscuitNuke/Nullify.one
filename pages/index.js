@@ -6,7 +6,7 @@ export default function Home() {
             <div className="d-flex flex-column justify-content-center align-items-center homepage-head" style={{ width: '100vw', height: '100vh' }}> 
                 <div className="container">
                     <h1 className="px-5 mb-3">Welcome to <span id="gradient-text" style={{ fontWeight: 650 }}>Nullify.one!</span></h1>
-                    <p className="px-5 lead">This is a demo site for my projects and learning experiences. <li></li>Click the different pages to see different projects!</p> 
+                    <p className="px-5 lead">This is a demo site for my projects and learning experiences. <br></br><br></br> Click the different pages to see different projects!</p> 
                 </div> 
             </div> 
 

@@ -9,10 +9,10 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Artifical Intellegence</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/main1.svg" width="300%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/NullAi1.svg" width="300%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>I recently have been trying to code and work on different Artifical Intellegences through Python and Javascript, while also making them compatible with Discord. Some models I have used are GPT-3, Microsoft's DialoGPT, and many different variants of GPT-2.</p> 
+                        <p>I have worked on many different cybersecurity projects including hosting my own test network for optimizing security and testing applications.</p> 
                     </div> 
                 </div> 
                 <hr></hr>
