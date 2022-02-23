@@ -34,7 +34,7 @@ export default function ChatBox() {
                 stop: '\nHuman'
             }, 
             headers: {
-                Authorization: 'Bearer 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', 
+                'Authorization': `Bearer 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`,
             }
         }; 
         const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', config); 
