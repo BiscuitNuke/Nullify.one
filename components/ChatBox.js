@@ -1,5 +1,7 @@
-import { useState } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import { Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap'; 
+import ChatMessage from './ChatMessage'; 
+import axios from 'axios'; 
 
 export default function ChatBox() {
     const [input, setInput] = useState(''); 
@@ -14,19 +16,52 @@ export default function ChatBox() {
             msg: input, 
         }; 
 
-        setMessages([...messages, msg]); 
+        botRequest(msg); 
         setInput(''); 
+    }; 
+
+    const botRequest = async msg => {
+        // request using 'msg.msg' 
+        // make new 'botMsg' variable: 
+        
+        const config = {
+            params: {    
+                prompt: msg.msg,
+                max_tokens: 150,
+                temperature: 0.9,
+                frequency_penalty: 0,
+                presence_penalty: 0.6,
+                stop: '\nHuman'
+            }, 
+            headers: {
+                Authorization: 'Bearer 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', 
+            }
+        }; 
+        const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', config); 
+        
+        let botMsg = {
+            isBot: true, 
+            msg: res.data.choices[0].text // the message from the bot 
+        }; 
+        console.log(res); 
+ 
+        updateMessages(msg, botMsg); 
+        console.log(messages); 
+    }; 
+
+    const updateMessages = (msg, botMsg) => {
+        setMessages([...messages, msg, botMsg]); 
     }; 
 
     return (
         <Container>
-            <Row>
-                {messages.map(msg => (
-                    <p>{msg.msg}</p>
+            <Row className="border rounded-top overflow-auto p-2" style={{maxHeight: '20rem'}}>
+                {messages.map((msg, indexKey) => (
+                    <ChatMessage data={msg} key={indexKey} />
                 ))} 
             </Row>
             <Row>
-                <InputGroup className="mb-3">
+                <InputGroup className="p-0 rounded-bottom">
                     <FormControl
                     placeholder="Type message here..."
                     aria-label="Type message here..."

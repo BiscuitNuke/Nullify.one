@@ -1,7 +1,11 @@
-export default function ChatMessage() {
+export default function ChatMessage(props) {
+    const msg = props.data.msg; 
+    const isBot = props.data.isBot;  
+
     return (
-        <div>
-            
+        <div className="w-100">
+            <h6>{isBot ? "Bot" : "You"}</h6>
+            <p>{msg}</p>
         </div>
     ); 
 }
