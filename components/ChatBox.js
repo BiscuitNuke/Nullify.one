@@ -26,14 +26,15 @@ export default function ChatBox() {
     const botRequest = async msg => {
         // request using 'msg.msg' 
         // make new 'botMsg' variable: 
-        
+        const chatLog = 'Human: Hello, who are you?\nAI: I am doing great. How can I help you today?\n';
+        const input = `${chatLog}You: ${msg.msg}`;
         const params = {
-            'prompt': msg.msg,
+            'prompt': input,
             'max_tokens': 150,
-            'temperature': 0.9,
+            'temperature': 0.8,
             'frequency_penalty': 0,
             'presence_penalty': 0.6,
-            'stop': '\nHuman'
+            'stop': ["\n", "\n\n"],
         }; 
         const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', params, {headers: {'Authorization': 'Bearer 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'}}); 
         
@@ -54,7 +55,8 @@ export default function ChatBox() {
     let submitBtnTxt = loading ? <Spinner animation="border" size="sm" /> : "Send"; 
 
     return (
-        <Container>
+        <Container className="border-top border-3 pt-3 mt-3">
+            <h2>AI Chat</h2>
             <Row className="border rounded-top overflow-auto p-2" style={{maxHeight: '20rem'}}>
                 {messages.map((msg, indexKey) => (
                     <ChatMessage data={msg} key={indexKey} />

@@ -32,7 +32,7 @@ export default function About() {
                         </p> 
                     </div> 
                 </div> 
-            </div> 
+            </div>
             <ChatBox /> 
         </main> 
   ); 
