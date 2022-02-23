@@ -12,7 +12,7 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/NullAI.svg" width="300%" height="200%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>Recently, I have been working on different research projects into AI. This has included testing out different models such as GPT-3 and EleutherAI. These models let me change the specific-use dataset, and so I have been trying to train different models and learn how machine learning works. You can see different models that I have worked with down below!</p> 
+                        <p>Recently, I have been working on different research projects into AI. This has included testing out different models such as GPT-3 and EleutherAI. These models let me change the specific-use dataset, and so I have been trying to train different models and learn how machine learning works. You can see different models that I have worked with down below! I have been researching AI due to my interest in cybersecuirty and how AI can be involved to help find issues before humans can, thus keeping systems secure and safe while protecting user privacy. </p> 
                     </div> 
                 </div> 
                 <hr />
