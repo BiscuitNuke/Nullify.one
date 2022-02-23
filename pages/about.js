@@ -24,7 +24,7 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/null.svg" width="450%" height="150%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my personal portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project I have been working on I have different tabs for different things that I have worked on and done, so make sure to check out each one. I have also been starting to make open source github repositories for my projects so make sure to check out my Github.</p> 
+                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my personal portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project I have been working on I have different tabs for different things that I have worked on and done, so make sure to check out each one. I have also been starting to make open source github repositories for my projects so make sure to check out my Github. This website is also meant to instruct or teach people as the code will (soon) be open source to a lot of my projects!</p> 
                     </div> 
                 </div> 
                 <hr />
