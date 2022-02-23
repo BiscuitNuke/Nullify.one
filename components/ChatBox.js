@@ -1,49 +1,47 @@
-import { useState, useEffect } from 'react'; 
-import { Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap'; 
+import { useState } from 'react'; 
+import { Container, Row, InputGroup, FormControl, Button, Spinner } from 'react-bootstrap'; 
 import ChatMessage from './ChatMessage'; 
 import axios from 'axios'; 
 
 export default function ChatBox() {
     const [input, setInput] = useState(''); 
     const [messages, setMessages] = useState([]); 
+    const [loading, setLoading] = useState(false); 
 
-    const handleClick = e => {
+    const handleSubmit = async e => {
         e.preventDefault(); 
         if (input == '') return; 
-        
+        setLoading(true); 
+
         let msg = {
             isBot: false, 
             msg: input, 
         }; 
 
-        botRequest(msg); 
         setInput(''); 
+        await botRequest(msg); 
+        setLoading(false); 
     }; 
 
     const botRequest = async msg => {
         // request using 'msg.msg' 
         // make new 'botMsg' variable: 
         
-        const config = {
-            params: {    
-                prompt: msg.msg,
-                max_tokens: 150,
-                temperature: 0.9,
-                frequency_penalty: 0,
-                presence_penalty: 0.6,
-                stop: '\nHuman'
-            }, 
-            headers: {
-                Authorization: 'Bearer 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', 
-            }
+        const params = {
+            'prompt': msg.msg,
+            'max_tokens': 150,
+            'temperature': 0.9,
+            'frequency_penalty': 0,
+            'presence_penalty': 0.6,
+            'stop': '\nHuman'
         }; 
-        const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', config); 
+        const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', params, {headers: {'Authorization': 'Bearer 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'}}); 
         
         let botMsg = {
             isBot: true, 
             msg: res.data.choices[0].text // the message from the bot 
         }; 
-        console.log(res); 
+        console.log("RES:", res); 
  
         updateMessages(msg, botMsg); 
         console.log(messages); 
@@ -53,6 +51,8 @@ export default function ChatBox() {
         setMessages([...messages, msg, botMsg]); 
     }; 
 
+    let submitBtnTxt = loading ? <Spinner animation="border" size="sm" /> : "Send"; 
+
     return (
         <Container>
             <Row className="border rounded-top overflow-auto p-2" style={{maxHeight: '20rem'}}>
@@ -61,18 +61,20 @@ export default function ChatBox() {
                 ))} 
             </Row>
             <Row>
-                <InputGroup className="p-0 rounded-bottom">
-                    <FormControl
-                    placeholder="Type message here..."
-                    aria-label="Type message here..."
-                    aria-describedby="basic-addon2"
-                    value={input} 
-                    onChange={e => setInput(e.target.value)}
-                    />
-                    <Button variant="outline-secondary" id="button-addon2" onClick={handleClick}>
-                    Send
-                    </Button>
-                </InputGroup>
+                <form className="p-0" onSubmit={handleSubmit}>
+                    <InputGroup className="rounded-bottom">
+                        <FormControl
+                        placeholder="Type message here..."
+                        aria-label="Type message here..."
+                        aria-describedby="basic-addon2"
+                        value={input} 
+                        onChange={e => setInput(e.target.value)}
+                        />
+                        <Button variant="outline-secondary" id="button-addon2" onClick={handleSubmit} disabled={loading}>
+                        {submitBtnTxt}
+                        </Button>
+                    </InputGroup>
+                </form>
             </Row>
         </Container>
     ); 

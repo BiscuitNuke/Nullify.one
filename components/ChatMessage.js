@@ -5,7 +5,7 @@ export default function ChatMessage(props) {
     return (
         <div className="w-100">
             <h6>{isBot ? "Bot" : "You"}</h6>
-            <p>{msg}</p>
+            <p className="text-wrap text-break">{msg}</p>
         </div>
     ); 
 }
