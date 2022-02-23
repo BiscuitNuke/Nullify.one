@@ -1,6 +1,6 @@
 import TeamCard from '../components/TeamCard'; 
 import Image from 'next/image'; 
-
+import ChatBox from '../components/ChatBox'; 
 
 export default function About() {
   return ( 
@@ -33,6 +33,7 @@ export default function About() {
                     </div> 
                 </div> 
             </div> 
+            <ChatBox /> 
         </main> 
   ); 
 }
