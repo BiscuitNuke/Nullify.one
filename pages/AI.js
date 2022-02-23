@@ -18,7 +18,7 @@ export default function About() {
                 <hr />
                 <div className="row">
                 <div className="col-sm text-center position-relative">
-                    <Image src="/GHP_Stuff/Devc.png" width="600%" height="400%" className="rounded img-fluid" /> 
+                    <Image src="/GHP_Stuff/Devc.png" width="800%" height="500%" className="rounded img-fluid" /> 
                     <p>This was one of my testing AI's, coded in Python 3</p>
                 </div> 
                     <div className="col-sm">
