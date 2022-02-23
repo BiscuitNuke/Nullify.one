@@ -9,7 +9,7 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Cybersecurity</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/GHP_stuff/Server.png" width="500%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/GHP_stuff/server.png" width="500%" height="300%" className="rounded img-fluid" /> 
                         <p>Screenshot of VMware ESXi where I can host different operating systems</p>
                     </div> 
                     <div className="col-sm">
@@ -19,7 +19,7 @@ export default function About() {
                 <hr />
                 <div className="row">
                 <div className="col-sm text-center position-relative">
-                    <Image src="/GHP_stuff/Router_edge.jpg" width="500%" height="500%" className="rounded img-fluid" /> 
+                    <Image src="/GHP_stuff/Router_Edge.jpg" width="500%" height="500%" className="rounded img-fluid" /> 
                     <p>A photo of my testing router, where I can host private networks from, that are seperate from the internet</p>
                 </div> 
                     <div className="col-sm">

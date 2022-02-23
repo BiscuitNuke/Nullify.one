@@ -30,7 +30,7 @@ export default function About() {
                 <hr />
                 <div className="row">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/nullify.svg" width="500%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/Nullify.svg" width="500%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
                         <p>
