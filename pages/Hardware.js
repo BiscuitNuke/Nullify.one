@@ -9,20 +9,29 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Hardware Projects</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/primary_black.svg" width="300%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/GHP_stuff/PC.jpg" width="600%" height="350%" className="rounded img-fluid" /> 
+                        <p>This image shows my desktop today! It still contains parts from my first build. The image to the right shows when I was working on installing my Liquid cooling unit so I could overclock my CPU.</p>
                     </div> 
                     <div className="col-sm">
                         <p>Computer hardware has been my main interest as I like to work with things physcially and find out issues through trying different things. I have my main desktop computer that I have been working on since I was 10 years old, and I have servers in my basement to test different virtual machines as well as different hardware combinations.</p> 
+                        <Image src="/GHP_stuff/My_PC.jpg" width="500%" height="350%" className="rounded img-fluid" /> 
                     </div> 
                 </div> 
-                <hr></hr>
+                <hr />
                 <div className="row">
+                    <div className="col-sm text-center position-relative">
+                        <Image src="/GHP_stuff/servera.png" width="600%" height="250%" className="rounded img-fluid" />
+                        <p>This is the server that runs my applications</p> 
+                        <Image src="/GHP_stuff/mining.jpg" width="600%" height="350%" className="rounded img-fluid" /> 
+                        <p>This is my Bitcoin Mining rig, where I use 3x 3060 Ti graphics cards to hash transactions on the Bitcoin Blockchain</p> 
+                    </div> 
                     <div className="col-sm">
                         <p>
-                            More text can go here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus quis massa venenatis pulvinar. Donec sapien libero, varius sit amet rutrum sed, vulputate at justo. Ut aliquam quis risus dictum facilisis. In cursus leo augue, sed laoreet lectus egestas sed. Praesent metus purus, cursus a venenatis eu, volutpat sit amet sapien. Phasellus diam turpis, cursus at fringilla quis, pretium tempor ex. Proin blandit vel tellus et auctor.
+                            Currently, my main ESXi server is running on a Ryzen 5, 3600x, the same server that is currently hosting this website! This server also runs various applications such as my code that I use to train and test other AI datasets.
                         </p> 
+                        <Image src="/GHP_stuff/AMDENGA.jpg" width="600%" height="400%" className="rounded img-fluid" /> 
                         <p>
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque faucibus magna eget massa porttitor, quis volutpat felis dignissim. Maecenas pulvinar neque arcu, in cursus lacus facilisis id. Aenean rhoncus hendrerit mi, vel molestie mi rhoncus vitae. Aenean aliquam diam tortor, non placerat felis semper id. Praesent in velit quam. Maecenas vel mollis quam, tincidunt ultrices diam. Nulla facilisi. Pellentesque non feugiat eros.
+                            I have also worked on fixing devices such as routers and phones, as I try to learn more about how things work and how I can repair things on my own. Currently I have been working on my server network's hardware, where I was testing an AMD Development processor, that was used for first-generation EPYC server processor development. This project so far has not worked due to vendor locks on the processor itself.
                         </p> 
                     </div> 
                 </div> 

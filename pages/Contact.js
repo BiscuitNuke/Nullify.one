@@ -10,21 +10,17 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Contact me</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/primary_black.svg" width="300%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/Null.svg" width="300%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>You can contact me through Email, Phone Number, and Discord!</p> 
+                        <p>You can contact me through Email, Phone Number, and Discord! On the footer of the page there are multiple links that connect to my Instagram, Github, and LinkedIN. Thanks for visiting my page!</p> 
+                        <br />
+                        <p> My Discord is BiscuitFighter#0001 for any questions/inquiries</p>
                     </div> 
                 </div> 
-                <hr></hr>
+                {/* <hr /> */}
                 <div className="row">
                     <div className="col-sm">
-                        <p>
-                            INFO
-                        </p> 
-                        <p>
-                            INFO
-                        </p> 
                     </div> 
                 </div> 
             </div> 

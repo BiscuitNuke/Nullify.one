@@ -9,20 +9,27 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Cybersecurity</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/primary_black.svg" width="300%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/GHP_stuff/Server.png" width="500%" height="300%" className="rounded img-fluid" /> 
+                        <p>Screenshot of VMware ESXi where I can host different operating systems</p>
                     </div> 
                     <div className="col-sm">
-                        <p>I have worked on many different cybersecurity projects including hosting my own test network for optimizing security and testing applications.</p> 
+                        <p>I have worked on many different cybersecurity projects including hosting my own test network for optimizing security and testing applications. I run a test network on my server that lets me simulate unsafe and hackable networks so I can test what I learn and try to learn more about ethical hacking and cybersecurity.</p> 
                     </div> 
                 </div> 
-                <hr></hr>
+                <hr />
                 <div className="row">
+                <div className="col-sm text-center position-relative">
+                    <Image src="/GHP_stuff/Router_edge.jpg" width="500%" height="500%" className="rounded img-fluid" /> 
+                    <p>A photo of my testing router, where I can host private networks from, that are seperate from the internet</p>
+                </div> 
                     <div className="col-sm">
                         <p>
-                            More text can go here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus quis massa venenatis pulvinar. Donec sapien libero, varius sit amet rutrum sed, vulputate at justo. Ut aliquam quis risus dictum facilisis. In cursus leo augue, sed laoreet lectus egestas sed. Praesent metus purus, cursus a venenatis eu, volutpat sit amet sapien. Phasellus diam turpis, cursus at fringilla quis, pretium tempor ex. Proin blandit vel tellus et auctor.
+                            Recently I have been researching the uses of Artifical Intellegence into AI, with programs such as IBM Trusteer and Darktrace AI, programs that automatically scan networks and find issues before anyone can exploit them.
                         </p> 
+                        <Image src="/GHP_stuff/Burp.png" width="500%" height="300%" className="rounded img-fluid" /> 
                         <p>
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque faucibus magna eget massa porttitor, quis volutpat felis dignissim. Maecenas pulvinar neque arcu, in cursus lacus facilisis id. Aenean rhoncus hendrerit mi, vel molestie mi rhoncus vitae. Aenean aliquam diam tortor, non placerat felis semper id. Praesent in velit quam. Maecenas vel mollis quam, tincidunt ultrices diam. Nulla facilisi. Pellentesque non feugiat eros.
+                            I have began to use programs like Burp suite to learn how cybersecurity is a growing concern over user and company data, as well as research into how I can do ethical hacking to earn bug bounties.
+                            These types of programs have helped me pursue cybersecurity due to more work I have done in the field, as well as learning how attacks are done.
                         </p> 
                     </div> 
                 </div> 

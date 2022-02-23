@@ -9,20 +9,21 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">Website Design</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/primary_black.svg" width="300%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/GHP_stuff/Webcode.png" width="700%" height="100%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
                         <p>I have been working on this website so I learn both how to do CSS and how to host and deploy websites using Next.JS as well as learning Javascript.</p> 
                     </div> 
                 </div>
-                <hr></hr>
+                <hr />
                 <div className="row">
                     <div className="col-sm">
                         <p>
-                            More text can go here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus quis massa venenatis pulvinar. Donec sapien libero, varius sit amet rutrum sed, vulputate at justo. Ut aliquam quis risus dictum facilisis. In cursus leo augue, sed laoreet lectus egestas sed. Praesent metus purus, cursus a venenatis eu, volutpat sit amet sapien. Phasellus diam turpis, cursus at fringilla quis, pretium tempor ex. Proin blandit vel tellus et auctor.
+                            This site is currently running on my local computers as it is shown on the open internet. I use Cloudflare to deploy development versions that let me test my code and push it to Github.
                         </p> 
+                            <Image src="/GHP_stuff/Gitcode.png" width="800%" height="340%" className="rounded img-fluid" /> 
                         <p>
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque faucibus magna eget massa porttitor, quis volutpat felis dignissim. Maecenas pulvinar neque arcu, in cursus lacus facilisis id. Aenean rhoncus hendrerit mi, vel molestie mi rhoncus vitae. Aenean aliquam diam tortor, non placerat felis semper id. Praesent in velit quam. Maecenas vel mollis quam, tincidunt ultrices diam. Nulla facilisi. Pellentesque non feugiat eros.
+                            Base files for the website were from a development project called "BiscuitHost", but since then I have been working on this website due to an improved name and development system, so a big thanks to @Lathryx for the previous website teplate. 
                         </p> 
                     </div> 
                 </div> 

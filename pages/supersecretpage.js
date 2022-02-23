@@ -17,11 +17,11 @@ export default function About() {
                         <h2>As reading the name, this is a hidden webpage, and congrats for finding it! Here you can find my Twitch, among other gameserver links! Have fun!</h2>
                     </div> 
                 </div> 
-                <hr></hr>
+                <hr />
                 <h3>IP Address : 107.150.23.164 --- You are going to need port 25568 to connect to the Minecraft Server</h3>
-                <br></br>
-                <br></br>
-                <br></br>
+                <br />
+                <br />
+                <br />
                 <Link href="https://twitch.tv/biscuitgoingnuclear">
                     <h1> My Twitch!</h1>
                 </Link>
