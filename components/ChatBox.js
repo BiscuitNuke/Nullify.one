@@ -47,7 +47,7 @@ export default function ChatBox() {
         });
         let botMsg = {
             isBot: true, 
-            msg: gptResponse.data.choices[0].text// the message from the bot 
+            msg: gptResponse.data.choices[0].text.replace("Luna:", "").replace("Me:", "") // the message from the bot 
         }; 
             
         // const input = `${chatLog}You: ${msg.msg}`;
@@ -79,7 +79,7 @@ export default function ChatBox() {
 
     return (
         <Container className="border-top border-3 pt-3 mt-3">
-            <h2>AI Chat</h2>
+            <h2 className="text-danger">Chat with Luna (AI)</h2>
             <Row className="border rounded-top overflow-auto p-2" style={{maxHeight: '20rem'}}>
                 {messages.map((msg, indexKey) => (
                     <ChatMessage data={msg} key={indexKey} />
