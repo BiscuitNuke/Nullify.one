@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Container, Row, InputGroup, FormControl, Button, Spinner } from 'react-bootstrap'; 
 import ChatMessage from './ChatMessage'; 
 import axios from 'axios'; 
+const OpenAI = require("openai-api");
+const openai = new OpenAI('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');
 
 export default function ChatBox() {
     const [input, setInput] = useState(''); 
@@ -26,23 +28,44 @@ export default function ChatBox() {
     const botRequest = async msg => {
         // request using 'msg.msg' 
         // make new 'botMsg' variable: 
-        const chatLog = 'Human: Hello, who are you?\nAI: I am doing great. How can I help you today?\n';
-        const input = `${chatLog}You: ${msg.msg}`;
-        const params = {
-            'prompt': input,
-            'max_tokens': 150,
-            'temperature': 0.8,
-            'frequency_penalty': 0,
-            'presence_penalty': 0.6,
-            'stop': ["\n", "\n\n"],
-        }; 
-        const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', params, {headers: {'Authorization': 'Bearer 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'}}); 
-        
+        let defaultPrompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
+        let prompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
+        prompt = defaultPrompt;
+        prompt += `Me: ${msg}\n`; //points to message content 
+        const gptResponse = await openai.complete({
+            engine: "curie",
+            prompt: prompt,
+            maxTokens: 150,
+            temperature: 0.9,
+            topP: 1,
+            presencePenalty: 0.85,
+            frequencyPenalty: 0.85,
+            bestOf: 1,
+            n: 1,
+            stream: false,
+            stop: ["\n", "\n\n"],
+        });
         let botMsg = {
             isBot: true, 
-            msg: res.data.choices[0].text // the message from the bot 
+            msg: gptResponse.data.choices[0].text// the message from the bot 
         }; 
-        console.log("RES:", res); 
+            
+        // const input = `${chatLog}You: ${msg.msg}`;
+        // const params = {
+        //     'prompt': input,
+        //     'max_tokens': 150,
+        //     'temperature': 0.8,
+        //     'frequency_penalty': 0,
+        //     'presence_penalty': 0.6,
+        //     'stop': ["\n", "\n\n"],
+        // }; 
+        // const res = await axios.post('https://api.openai.com/v1/engines/curie/completions', params, {headers: {'Authorization': 'Bearer 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'}}); 
+        
+        // let botMsg = {
+        //     isBot: true, 
+        //     msg: res.data.choices[0].text // the message from the bot 
+        // }; 
+        // console.log("RES:", res); 
  
         updateMessages(msg, botMsg); 
         console.log(messages); 
