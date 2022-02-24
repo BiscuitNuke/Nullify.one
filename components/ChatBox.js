@@ -49,7 +49,7 @@ export default function ChatBox() {
             isBot: true, 
             msg: gptResponse.data.choices[0].text.replace("Luna:", "").replace("Me:", "") // the message from the bot 
         }; 
-            
+        prompt = defaultPrompt;  
         // const input = `${chatLog}You: ${msg.msg}`;
         // const params = {
         //     'prompt': input,
