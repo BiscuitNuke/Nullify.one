@@ -27,7 +27,7 @@ export default function About() {
                     </div> 
                     <div className="col-sm">
                         <p>
-                            Currently, my main ESXi server is running on a My central ESXi server is currently running on a Ryzen 5, 3600x, the same server presently hosting this website! This server also runs various applications such as my code to train and test other AI datasets.Ryzen 5, 3600x, the same server that is currently hosting this website! This server also runs various applications such as my code that I use to train and test other AI datasets.
+                            Currently, my main ESXi server is running on a Ryzen 5 3600x, as it is the same server presently hosting this website! This server also runs various applications such as my code to train and test other AI datasets.Ryzen 5, 3600x, the same server that is currently hosting this website! This server also runs various applications such as my code that I use to train and test other AI datasets.
                         </p> 
                         <Image src="/GHP_stuff/AMDENGA.jpg" width="600%" height="400%" className="rounded img-fluid" /> 
                         <p>
