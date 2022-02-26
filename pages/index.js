@@ -11,7 +11,7 @@ export default function Home() {
             </div> 
 
             <div className="container p-5">
-                <p className="h2 mb-4">Click on the top bars to look at other pages!</p> 
+                <p className="h2 mb-4">Click on the navigation bars to look at other pages!</p> 
                 <hr />
                 <p>
                     Made by Kieran Wittstruck, Template from BiscuitHost old website!

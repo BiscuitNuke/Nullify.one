@@ -13,7 +13,7 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/null.svg" width="300%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>You can contact me through Email, Phone Number, and Discord! On the footer of the page there are multiple links that connect to my Instagram, Github, and LinkedIN. Thanks for visiting my page!</p> 
+                        <p>You can contact me through Email, Phone Number, and Discord! Multiple links connect to my Instagram, Github, and LinkedIn on the page's footer. Thanks for visiting my page!</p> 
                         <br />
                         <p> My Discord is BiscuitFighter#0001 for any questions/inquiries</p>
                     </div> 

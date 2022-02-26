@@ -24,7 +24,7 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/null.svg" width="450%" height="150%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my personal portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project I have been working on I have different tabs for different things that I have worked on and done, so make sure to check out each one. I have also been starting to make open source github repositories for my projects so make sure to check out my Github. This website is also meant to instruct or teach people as the code will (soon) be open source to a lot of my projects!</p> 
+                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project I have actively been updating. I have different tabs for different things that I have worked on and done, so make sure to check out each one. I have also been starting to make open source GitHub repositories for my projects, so check out my Github. This website is meant to instruct or teach people as the code will (soon) be open source to many of my projects! My main interest is focused on cybersecurity and how growing digital threats impact everyone</p> 
                     </div> 
                 </div> 
                 <hr />
@@ -34,7 +34,7 @@ export default function About() {
                     </div> 
                     <div className="col-sm">
                         <p>
-                            This project has been developed and worked on by many different people, as the template of the website was made by @Lathryx for BiscuitHost, but I have changed and added many parts for my portfolio.
+                        This project has been developed and worked on by many people, as the website template was made by @Lathryx for BiscuitHost. I have changed and edited things, and I thank him for his help.
                         </p> 
                         <h3>
                             Keep checking back in for more updates on projects and developments! We have a lot of things in the works and can't wait to share them!

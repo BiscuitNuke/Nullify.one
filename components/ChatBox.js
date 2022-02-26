@@ -30,13 +30,12 @@ export default function ChatBox() {
         // make new 'botMsg' variable: 
         let defaultPrompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
         let prompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
-        prompt = defaultPrompt;
-        prompt += `Me: ${msg}\n`; //points to message content 
+        defaultPrompt += `Me: ${msg}\n`; //points to message content 
         const gptResponse = await openai.complete({
             engine: "curie",
             prompt: prompt,
             maxTokens: 150,
-            temperature: 0.9,
+            temperature: 0.8,
             topP: 1,
             presencePenalty: 0.85,
             frequencyPenalty: 0.85,

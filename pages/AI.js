@@ -12,7 +12,7 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/NullAI.svg" width="300%" height="200%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>Recently, I have been working on different research projects into AI. This has included testing out different models such as GPT-3 and EleutherAI. These models let me change the specific-use dataset, and so I have been trying to train different models and learn how machine learning works. You can see different models that I have worked with down below! I have been researching AI due to my interest in cybersecuirty and how AI can be involved to help find issues before humans can, thus keeping systems secure and safe while protecting user privacy. </p> 
+                        <p>Recently, I have been working on different research projects into AI. This has included testing out other models such as GPT-3 and EleutherAI. These models let me change the specific-use dataset, so I have been trying to train different models and learn how machine learning works. You can see other models that I have worked with down below! I have been researching AI due to my interest in cybersecurity and how AI can help find issues before humans can, thus keeping systems secure and safe while protecting user privacy. </p> 
                     </div> 
                 </div> 
                 <hr />
@@ -23,7 +23,7 @@ export default function About() {
                 </div> 
                     <div className="col-sm">
                         <p>
-                           Here is one of the AI's I have recently worked with, called GPT-3 made by OpenAI, it can use API requests to return responses using a pre set model. This image also shows how I have added a small training model of my own, so it learns from what I have inputted for a first sentence.
+                        Here is one of the AI's I have recently worked with, called GPT-3 made by OpenAI, it can use API requests to return responses using a pre set model. This image also shows how I have added a small training model of my own, so it learns from what I have inputted for a first sentence.
                             It can also be changed to use different models and learn in many different ways. This AI was used in connection to Discord.JS, a package that lets me control a discord bot, so it presumed a personality on a Discord Server.
                         </p> 
                         <Image src="/GHP_Stuff/Demo.jpg" width="650%" height="600%" className="rounded img-fluid" /> 

@@ -11,6 +11,7 @@ export default function Navbar() {
                 <Link href="/AI"><li><a>Artificial Intellgence</a></li></Link> 
                 <Link href="/Cybersec"><li><a>Cybersecurity</a></li></Link> 
                 <Link href="/WebsiteDesign"><li><a>Website Design</a></li></Link> 
+                <Link href="/Photos"><li><a>Extra Photos</a></li></Link>
                 <Link href="/Contact"><li><a>Contact</a></li></Link>                 
             </ul> 
         </nav> 

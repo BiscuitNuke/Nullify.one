@@ -23,7 +23,7 @@ export default function About() {
                         </p> 
                             <Image src="/GHP_stuff/Gitcode.png" width="800%" height="340%" className="rounded img-fluid" /> 
                         <p>
-                            Base files for the website were from a development project called "BiscuitHost", but since then I have been working on this website due to an improved name and development system, so a big thanks to @Lathryx for the previous website teplate. 
+                            Base files for the website were from a development project called "BiscuitHost", but since then, I have been working on this website due to an improved name and development system, so a big thanks to @Lathryx for the previous website template. 
                         </p> 
                     </div> 
                 </div> 
