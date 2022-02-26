@@ -13,24 +13,28 @@ export default function About() {
                         <Image src="/GHP_stuff/Devc.jpg" width="600%" height="350%" className="rounded img-fluid" /> 
                         <p>This image shows the code behind the AI called BiscuitBot</p>
                         <Image src="/GHP_stuff/Jake.png" width="500%" height="450%" className="rounded img-fluid" /> 
+                        <p>This is an demonstration of another model I have used</p>
                         
                     </div> 
                     <div className="col-sm">
                         <Image src="/GHP_stuff/Demo.jpg" width="500%" height="450%" className="rounded img-fluid" />
                         <p> This image shows the GPT-3 model using my own extra training to act like a coding student enabled, while using the social platform discord to converse</p>
                         <Image src="/GHP_stuff/Keras.png" width="800%" height="450%" className="rounded img-fluid" /> 
+                        <p> This is an image of the code used to train models, from Tensorflow</p>
                     </div> 
                     <hr />
                     <div className="col-sm text-center position-relative">
                         <h2>This is some of the photos from Hardware repair and building</h2>
                         <Image src="/GHP_stuff/bitcoin.jpg" width="600%" height="350%" className="rounded img-fluid" /> 
                         <p>This image shows my bitcoin rig!</p>
-                        <Image src="/GHP_stuff/servers.jpg" width="500%" height="550%" className="rounded img-fluid" />   
+                        <Image src="/GHP_stuff/servers.jpg" width="500%" height="550%" className="rounded img-fluid" /> 
+                        <p> This shows my testing area with all of my servers</p>  
                     </div> 
                     <div className="col-sm">
                         <Image src="/GHP_stuff/router.jpg" width="600%" height="350%" className="rounded img-fluid" />
                         <p> This image shows my server network</p>
                         <Image src="/GHP_stuff/building.jpg" width="600%" height="650%" className="rounded img-fluid" /> 
+                        <p> This shows me building my bitcoin rig, and using PCIE risers</p>
                     </div> 
                 </div> 
             </div> 
