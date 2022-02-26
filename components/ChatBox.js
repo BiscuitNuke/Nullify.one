@@ -33,7 +33,7 @@ export default function ChatBox() {
         prompt = defaultPrompt;
         prompt += `Me: ${msg}\n`; //points to message content 
         const gptResponse = await openai.complete({
-            engine: "curie",
+            engine: "davinci",
             prompt: prompt,
             maxTokens: 150,
             temperature: 0.9,
