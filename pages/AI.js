@@ -26,7 +26,7 @@ export default function About() {
                         Here is one of the AI's I have recently worked with, called GPT-3 made by OpenAI, it can use API requests to return responses using a pre set model. This image also shows how I have added a small training model of my own, so it learns from what I have inputted for a first sentence.
                             It can also be changed to use different models and learn in many different ways. This AI was used in connection to Discord.JS, a package that lets me control a discord bot, so it presumed a personality on a Discord Server.
                         </p> 
-                        <Image src="/GHP_Stuff/Devc.jpg" width="750%" height="600%" className="rounded img-fluid" /> 
+                        <Image src="/GHP_stuff/Devc.jpg" width="500%" height="450%" className="rounded img-fluid" />
                         <p>
                             This image shows one of the bots I have worked on responding to what I say, as it pulls what I say from the chat application and automatically formulates a response using OpenAI's API.
                         </p> 
