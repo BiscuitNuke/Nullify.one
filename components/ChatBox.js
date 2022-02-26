@@ -32,7 +32,7 @@ export default function ChatBox() {
         let prompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
         defaultPrompt += `Me: ${msg}\n`; //points to message content 
         const gptResponse = await openai.complete({
-            engine: "curie",
+            engine: "davinci",
             prompt: prompt,
             maxTokens: 150,
             temperature: 0.8,
