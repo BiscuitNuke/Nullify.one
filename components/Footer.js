@@ -10,7 +10,6 @@ export default function Footer() {
                 <Link href="https://www.linkedin.com/in/kieranwittstruck/"><li className="position-relative"><Image src="/Icons/LinkedIN.svg" width="60" height="50" /></li></Link> 
                 <Link href="https://www.instagram.com/kieran_wittstruck/"><li className="position-relative"><Image src="/Icons/Instagram.svg" width="60" height="50" /></li></Link> 
                 <Link href="/"><p className="position-relative"><Image src="/icons/" width="800" height="50" /></p></Link> 
-                <Link href="/supersecretpage"><li className="position-relative"><Image src="/" width="200" height="50" /></li></Link> 
             </ul>
             <br></br>
         </footer> 

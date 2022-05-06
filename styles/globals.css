@@ -17,7 +17,7 @@ a {
 
 :root {
     --orange: #FA5705;
-    --blue: #486677;
+    --gray: #486677;
     --red: #ED2A24;
     --black: #000000;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 #navlist a {
-    color: #666; 
+    color: rgb(0, 0, 0); 
     text-decoration: none; 
 }
 
@@ -58,13 +58,63 @@ body {
     color: #222; 
 }
 
+
 #gradient-text {
     background-image: linear-gradient(to right, var(--black), var(--red) 65%);
     backgroung-clip: text; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
+#gradient-text1 {
+    background-image: linear-gradient(50deg, var(--red), var(--orange), var(--black) 50%); 
+    animation: movinggradient 5s ease infinite;
+    background-size: 100%;
+    backgroung-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+#gradtext {
+    background: linear-gradient(50deg, var(--red), var(--orange), var(--black));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-animation: gradtext 5s ease infinite;
+    -moz-animation: gradtext 5s ease infinite;
+    -o-animation: gradtext 5s ease infinite;
+    animation: gradtext 5s ease infinite;
+}
 
+#headtext {
+    background: linear-gradient(to right, var(--red), var(--orange), var(--black));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-animation: gradtext 10s ease infinite;
+    -moz-animation: gradtext 10s ease infinite;
+    -o-animation: gradtext 10s ease infinite;
+    animation: gradtext 10s ease infinite;
+}
+@-webkit-keyframes gradtext {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradtext {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes gradtext {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradtext {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+ 
 .team-card {
     max-width: 250px;
     padding: 1rem;
