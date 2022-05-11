@@ -21,8 +21,6 @@ export default function About() {
                 <div className="col-sm text-center position-relative">
                     <Image src="/GHP_stuff/Router_Edge.jpg" width="500%" height="500%" className="rounded img-fluid" /> 
                     <p>A photo of my testing router, where I can host private networks from, that are seperate from the internet</p>
-                    <br />
-                    <p> My main project has been working with AI and how it can be included in cybersecurity, as I have been researching programs such as IBM Trusteer and Darktrace AI. I have figured out how to work in different coding languages and use other AI models. Some things that I am looking into with this project are how I can make the model search networks and try to identify insecure software by running it in a VM and finding out the actions it takes.</p>
                 </div> 
                     <div className="col-sm">
                         <p>
@@ -33,7 +31,9 @@ export default function About() {
                         I have begun to use programs like Burp suite to learn how cybersecurity is a growing concern over user and company data and research into how I can do ethical hacking to earn bug bounties. These programs have helped me pursue cybersecurity due to more work I have done in the field and learning how attacks are produced.
                         </p> 
                     </div> 
+                    <iframe width="640" height="640" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
                 </div> 
+
             </div> 
         </main> 
   ); 
