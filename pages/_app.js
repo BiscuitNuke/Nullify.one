@@ -13,7 +13,7 @@ useEffect(() => {
   return (
     <div>
       <head>
-        <meta name="description" content="Welcome to Nullify.one! This is my research and personal projects to work to eliminate complicated network security, one computational intelligence at a time." />
+        <meta name="description" content="Welcome to Nullify.one! This is my research and personal projects site where I research cybersecurity and AI, as well as go into other projects that I have worked on." />
       </head>
       <Head>
         <meta property="og:image" content="/brand_pkg/PNG/N1.png" />
