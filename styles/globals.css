@@ -20,6 +20,15 @@ a {
     --gray: #486677;
     --red: #ED2A24;
     --black: #000000;
+    --darkblue: #001021;
+    --lightblue: #034748;
+    --blue: #1481ba;
+    --battlegray: #848c8e;
+    --white: #ffffff;
+    --lighteraqua: #41ead4;
+    --lighterblue: #0caadc;
+    --teal: #c7e8f3;
+    --nucleargreen: #84C318;
 }
 
 html, body, #__next, .vp-container {
@@ -33,6 +42,7 @@ body {
 }
 
 .vp-container {
+    height: 100%; 
     background: white; 
     color: black; 
 }
@@ -58,7 +68,9 @@ body {
     color: #222; 
 }
 
-
+footer {
+    fill: white;
+}
 #gradient-text {
     background-image: linear-gradient(to right, var(--black), var(--red) 65%);
     backgroung-clip: text; 
