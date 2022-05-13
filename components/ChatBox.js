@@ -28,8 +28,8 @@ export default function ChatBox() {
     const botRequest = async msg => {
         // request using 'msg.msg' 
         // make new 'botMsg' variable: 
-        let defaultPrompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
-        let prompt = `Luna is a teenager. Luna loves to read and code. Luna is an e-girl. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
+        let defaultPrompt = `Luna is a teenager. Luna loves to read and code. Luna likes to talk about cybersecurity. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
+        let prompt = `Luna is a teenager. Luna loves to read and code. Luna likes to talk about cybersecurity. Luna likes video games\nMe: hello Luna\nLuna: Hello!\n`;
         defaultPrompt += `Me: ${msg}\n`; //points to message content 
         const gptResponse = await openai.complete({
             engine: "davinci",

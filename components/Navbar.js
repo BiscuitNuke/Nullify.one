@@ -10,10 +10,9 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav " id="navlist">
                         <li className="nav-item"><Link className="nav-link" href="/about">About Nullify </Link></li> 
-                        <li className="nav-item"><Link className="nav-link" href="/AI">Artifical Intellegence </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Hardware">Hardware Projects </Link></li> 
+                        <li className="nav-item"><Link className="nav-link" href="/AI">Artifical Intellegence </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Cybersec">Cybersecurity </Link></li> 
-                        <li className="nav-item"><Link className="nav-link" href="/WebsiteDesign">Website Design </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Photos">Extra Photos </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Contact">Contact </Link></li>                 
                     </ul> 

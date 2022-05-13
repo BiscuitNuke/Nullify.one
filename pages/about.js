@@ -21,24 +21,20 @@ export default function About() {
                 <h1 className="px-4 mt-2 mb-4">About Nullify</h1> 
                 <div className="row mb-3">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/null.svg" width="450%" height="150%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/nully.svg" width="450%" height="150%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project I have actively been updating. I have different tabs for different things that I have worked on and done, so make sure to check out each one. I have also been starting to make open source GitHub repositories for my projects, so check out my Github. This website is meant to instruct or teach people as the code will (soon) be open source to many of my projects! My main interest is focused on cybersecurity and how growing digital threats impact everyone</p> 
+                        <p>Hello! I am Kieran Wittstruck! Welcome to Nullify.one, my portfolio and testing site! Nullify is based in Alpharetta, GA and has been a project/site I have actively been updating. I have different tabs for different things that I have worked on, researched, and done, so make sure to check out each one. My main focus for this site is Cybersecurity, and the impact AI can have on computer system security.</p> 
                     </div> 
                 </div> 
-                <hr />
                 <div className="row">
                     <div className="col-sm text-center position-relative">
-                        <Image src="/brand_pkg/SVG/Nullify.svg" width="500%" height="300%" className="rounded img-fluid" /> 
+                        <Image src="/brand_pkg/SVG/Nullif.svg" width="500%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <p>
-                        This project has been developed and worked on by many people, as the website template was made by @Lathryx for BiscuitHost. I have changed and edited things, and I thank him for his help.
-                        </p> 
-                        <h3>
-                            Keep checking back in for more updates on projects and developments! We have a lot of things in the works and can't wait to share them!
-                        </h3> 
+                        <h4>
+                        This project has been in progress, as the website template was made by @Lathryx for BiscuitHost (Deprecated Idea). I have changed and edited things, and I thank him for his help with learning about Next.js and Bootstrap.
+                        </h4> 
                     </div> 
                 </div> 
             </div> 

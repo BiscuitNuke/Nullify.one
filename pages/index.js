@@ -24,7 +24,7 @@ export default function Home() {
                 <p className="h2 mb-4">Click on the navigation bars to look at other pages! Some might be incomplete!</p> 
                 <hr />
                 <p>
-                    Made by Kieran Wittstruck and the Nullify.one team.
+                    Made by Kieran Wittstruck and the Nullify.one team. THIS SITE IS STILL BEING REWORKED, AND IS CURRENTLY INCOMPLETE.
                 </p> 
             </div>
         </main> 

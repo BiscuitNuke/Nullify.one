@@ -151,3 +151,7 @@ footer {
     background: url('../public/brand_pkg/SVG/Nullify.svg') no-repeat bottom -150px right -125px;
     width: 100%; height: auto;
 }
+.contact-back {
+    background: url('../public/brand_pkg/SVG/N11.svg') no-repeat bottom -417px right -360px;
+    width: 100%; height: auto;
+}
