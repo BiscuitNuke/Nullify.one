@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "axios": "^0.26.0",
+    "baguettebox.js": "^1.11.1",
     "bootstrap": "^5.0.0-beta3",
+    "bs5-lightbox": "^1.8.0",
     "got": "^11.8.0",
     "jquery": "^3.6.0",
     "next": "11.1.2",
