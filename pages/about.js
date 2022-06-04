@@ -1,18 +1,6 @@
 import TeamCard from '../components/TeamCard'; 
 import Image from 'next/image'; 
 
-const teamInfo = [ // in progress 
-    {
-        imgSrc: "https://res.cloudinary.com/practicaldev/image/fetch/s--g26D0EvY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eiz4s3guxkngasst7tdg.png", 
-        name: "Lathryx", 
-        title: "Senior Dev"
-    }, 
-    {
-        imgSrc: "https://res.cloudinary.com/practicaldev/image/fetch/s--g26D0EvY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eiz4s3guxkngasst7tdg.png", 
-        name: "Nick", 
-        title: "Concept Artist/Hardware Engineer"
-    }
-]; 
 
 export default function About() {
   return ( 
