@@ -13,7 +13,7 @@ export default function Navbar() {
                         <li className="nav-item"><Link className="nav-link" href="/Hardware">Hardware Projects </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/AI">Artifical Intellegence </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Cybersec">Cybersecurity </Link></li> 
-                        <li className="nav-item"><Link className="nav-link" href="/Photos">Extra Photos </Link></li> 
+                        <li className="nav-item"><Link className="nav-link" href="/Photos">Photo Gallery </Link></li> 
                         <li className="nav-item"><Link className="nav-link" href="/Contact">Contact </Link></li>                 
                     </ul> 
                 </div>

@@ -32,9 +32,6 @@ export default function About() {
                         <Image src="/brand_pkg/SVG/Nullif.svg" width="500%" height="300%" className="rounded img-fluid" /> 
                     </div> 
                     <div className="col-sm">
-                        <h4>
-                        This project has been in progress, as the website template was made by @Lathryx for BiscuitHost (Deprecated Idea). I have changed and edited things, and I thank him for his help with learning about Next.js and Bootstrap.
-                        </h4> 
                     </div> 
                 </div> 
             </div> 
