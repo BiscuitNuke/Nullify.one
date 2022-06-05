@@ -11,6 +11,7 @@ export default function About() {
                 <div className="row mb-3">
 
                 </div> 
+            
             </div> 
         </main> 
   ); 
