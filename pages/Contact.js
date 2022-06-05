@@ -24,6 +24,7 @@ export default function About() {
                     <Link href="https://www.linkedin.com/in/kieranwittstruck/"><p><u>Click here to go to my LinkedIN profile</u></p></Link> 
                     <hr></hr>
                 </div> 
+            
             </div> 
         </main> 
   ); 
