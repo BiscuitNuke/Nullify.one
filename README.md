@@ -49,6 +49,5 @@ This code base will only have production-ready and possibly running code in bran
 
 If any issues arise in development, please create a issue. The discussions feature has been enabled for discussion of site related topics, however, the #bh-site channel exists on Discord.
 
-The primary maintainers of the site are [Cayden Walsh](https://github.com/Lathryx) and [Arcade Wise](https://github.com/l3gacyb3ta). The primary systems administrator and implementations manager assigned to the site is [Garret Stand](https://github.com/gstand). Please refer to them with any relevant questions.
 
-© Copyright 2021 BiscuitHost. This source code is *confidential and proprietary.*
+© Copyright 2021 BiscuitHost. 
