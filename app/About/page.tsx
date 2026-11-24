@@ -5,7 +5,7 @@ export const metadata: Metadata = { title: "About NullifyOne" };
 
 const history = [
     { year: "2020", text: "NullifyOne starts in Alpharetta, GA. I pitch it like a startup: AI that stops network attacks." },
-    { year: "2022", text: "First real site. Next.js, Bootstrap, and a GPT-3 chatbot named Luna. Cayden Walsh built the template." },
+    { year: "2022", text: "First real site. Next.js, Bootstrap, and a GPT-3 chatbot named Luna." },
     { year: "2024", text: "NullifyNEXT. A slick rebuild on a template. It never shipped." },
     { year: "2026", text: "Rebooted as what it actually is: a research project I come back to." },
 ];
@@ -33,12 +33,6 @@ export default function About() {
                 <div className="prose">
                     <p>I study Computing Security at RIT. Nullify is where I park the network detection idea between classes and work.</p>
                     <p>No team, no funding, no customers. Just me. If that changes, this page will say so.</p>
-                </div>
-            </section>
-            <section className="wrap block">
-                <h2>Credits</h2>
-                <div className="prose">
-                    <p>Cayden Walsh built the 2022 site template. Thanks, Cayden.</p>
                 </div>
             </section>
         </>
