@@ -4,13 +4,10 @@ import { usePathname } from "next/navigation";
 import Mark from "./mark";
 
 export const pages = [
-    { href: "/About/", short: "About", long: "About NullifyOne" },
-    { href: "/Hardware/", short: "Hardware", long: "Hardware Development" },
-    { href: "/AI/", short: "AI", long: "Nullify AI" },
-    { href: "/Cybersec/", short: "Cybersec", long: "Cybersecurity Initiatives" },
-    { href: "/Devup/", short: "Updates", long: "Development Updates" },
+    { href: "/Product/", short: "Product", long: "NullifyOne" },
+    { href: "/About/", short: "About", long: "About" },
+    { href: "/Devup/", short: "Updates", long: "Updates" },
 ];
-
 export default function Nav() {
     const path = usePathname();
     return (

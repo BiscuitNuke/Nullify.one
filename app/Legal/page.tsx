@@ -11,7 +11,7 @@ export default function Legal() {
             <section className="wrap block">
                 <h2>Who runs this</h2>
                 <div className="prose">
-                    <p>Nullify.one is a personal project run by Kieran Wittstruck. It is not a registered business. It doesn&apos;t sell anything.</p>
+                    <p>Nullify is run by Kieran Wittstruck. It is not yet a registered business and doesn&apos;t sell anything yet.</p>
                     <p>Site content and the Nullify name and logo © 2020–2026 Kieran Wittstruck. The site source is on GitHub.</p>
                 </div>
             </section>
@@ -19,7 +19,7 @@ export default function Legal() {
                 <h2>Not affiliated</h2>
                 <div className="prose">
                     <p>This project has no connection to Nullify (nullify.ai), the AI product security company, or to any other business using the Nullify name.</p>
-                    <p>Other product names on this site, like Firewalla, Zeek or Darktrace, belong to their owners. Naming them isn&apos;t an endorsement.</p>
+                    <p>Other product names belong to their owners.</p>
                 </div>
             </section>
             <section className="wrap block">

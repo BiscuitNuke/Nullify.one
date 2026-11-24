@@ -2,25 +2,16 @@ import Link from "next/link";
 import Mark from "./components/mark";
 import Struck from "./components/strike";
 
-const problems = [
-    { h: "Small networks get hit too", p: "Homes and small offices see the same scans, phishing and malware as large companies. They don't have a security team watching." },
-    { h: "Nobody reads the logs", p: "A small business won't hire a SOC. The router keeps a log that nobody opens until something has already gone wrong." },
-    { h: "Cloud tools want your data", p: "Most monitoring products ship your traffic to someone else's servers. For a lot of small offices, that's a non-starter." },
+const features = [
+    { h: "Firewall and router", p: "Replaces the router you have. Gigabit routing, VLANs, and sane defaults out of the box." },
+    { h: "Intrusion prevention", p: "Inspects traffic and blocks known attacks, scans and malware before they reach your devices." },
+    { h: "DNS filtering", p: "Blocks malware, phishing and ad domains for every device. Nothing to install on each one." },
+    { h: "VPN", p: "WireGuard for remote staff and site-to-site links. A QR code, not a manual." },
+    { h: "Visibility", p: "Every device, what it talks to, and how much. New devices get flagged." },
+    { h: "One dashboard", p: "Runs on the box. No cloud account, no subscription to keep it working." },
 ];
 
-const steps = [
-    { h: "Watch", p: "A small device on your network reads flow data: who talked to who, when, and how much. It works on encrypted traffic." },
-    { h: "Learn", p: "A model learns what normal looks like on your network. Not a global list of bad. Your printer, your cameras, your people." },
-    { h: "Flag", p: "When something breaks the pattern, you get a plain-English alert that says what changed and why it matters." },
-];
-
-const roadmap = [
-    { item: "Concept", state: "done", note: "On-premise anomaly detection for small networks. Since 2020." },
-    { item: "Test network", state: "done", note: "A live lab network with real devices and real traffic." },
-    { item: "Traffic collection", state: "planned", note: "Flow logs from the lab network." },
-    { item: "Detection model", state: "not started", note: "First model trained on lab data." },
-    { item: "Hardware device", state: "not started", note: "Small, cheap, plugs into your switch." },
-];
+const replaces = ["Consumer router", "Separate firewall", "Pi-hole", "VPN server", "Network monitor"];
 
 export default function Home() {
     return (
@@ -33,12 +24,13 @@ export default function Home() {
                             network security.
                         </h1>
                         <p className="lede">
-                            Nullify is building on-premise threat detection for small networks. It learns what normal looks like on your network and tells you when something isn&apos;t.
+                            NullifyOne is one box that secures a small office or home network. Firewall, intrusion prevention, filtering and VPN, set up in minutes.
                         </p>
                         <div className="cta">
-                            <Link href="/AI/" className="button">How it works</Link>
-                            <Link href="#roadmap" className="button button-ghost">See the roadmap</Link>
+                            <Link href="/Product/" className="button">See NullifyOne</Link>
+                            <Link href="/Contact/" className="button button-ghost">Join the early list</Link>
                         </div>
+                        <p className="status-line"><span className="dot" aria-hidden="true" /> In development. Not for sale yet.</p>
                     </div>
                     <div className="hero-mark">
                         <Mark size={360} weight={10} className="mark-big" />
@@ -47,62 +39,21 @@ export default function Home() {
             </section>
 
             <section className="wrap block">
-                <h2>The problem</h2>
+                <h2>One box. Everything a small network needs.</h2>
+                <p className="sub">Small offices end up with a pile of gear and nobody who has time to run it. NullifyOne puts it in one place.</p>
                 <div className="cols">
-                    {problems.map(i => (
-                        <div key={i.h}>
-                            <h3>{i.h}</h3>
-                            <p>{i.p}</p>
-                        </div>
+                    {features.map(f => (
+                        <div key={f.h}><h3>{f.h}</h3><p>{f.p}</p></div>
                     ))}
                 </div>
             </section>
 
             <section className="band">
                 <div className="wrap block">
-                    <h2>How Nullify works</h2>
-                    <p className="sub">Everything runs on your network. Your traffic never leaves the building.</p>
-                    <ol className="steps">
-                        {steps.map((s, i) => (
-                            <li key={s.h}>
-                                <span className="step-n">{i + 1}</span>
-                                <h3>{s.h}</h3>
-                                <p>{s.p}</p>
-                            </li>
-                        ))}
-                    </ol>
-                </div>
-            </section>
-
-            <section id="roadmap" className="wrap block">
-                <h2>Roadmap</h2>
-                <p className="sub">Nullify is in the research stage. There is no product to buy yet. This is where each piece stands.</p>
-                <ul className="status">
-                    {roadmap.map(s => (
-                        <li key={s.item}>
-                            <span className="what">{s.item}</span>
-                            <span className={`tag t-${s.state.replace(/\s/g, "-")}`}>{s.state}</span>
-                            <span className="note">{s.note}</span>
-                        </li>
-                    ))}
-                </ul>
-                <p className="more"><Link href="/Devup/">Read the development updates</Link></p>
-            </section>
-
-            <section className="wrap block">
-                <h2>Need something today?</h2>
-                <p className="sub">Nullify isn&apos;t ready. These are.</p>
-                <div className="paths">
-                    <Link href="/Help/" className="path path-red">
-                        <span className="kicker">Right now</span>
-                        <strong>Being attacked?</strong>
-                        <span>Ransomware, hacked email, money sent to a scammer. What to do first and who to call.</span>
-                    </Link>
-                    <Link href="/Cybersec/" className="path">
-                        <span className="kicker">This week</span>
-                        <strong>Small network checklist</strong>
-                        <span>The free basics that stop most attacks on home and small-office networks.</span>
-                    </Link>
+                    <h2>Replaces</h2>
+                    <ul className="replaces">
+                        {replaces.map(r => <li key={r}>{r}</li>)}
+                    </ul>
                 </div>
             </section>
 
@@ -110,9 +61,9 @@ export default function Home() {
                 <div className="closer">
                     <div>
                         <h2>Run a small network?</h2>
-                        <p>Tell us what you&apos;d want it to catch. Early input shapes what gets built.</p>
+                        <p>Get on the early list. You&apos;ll hear first when there&apos;s something to test.</p>
                     </div>
-                    <a href="mailto:kierana@nullify.one" className="button button-invert">Get in touch</a>
+                    <a href="mailto:kierana@nullify.one?subject=NullifyOne%20early%20list" className="button button-invert">Join the early list</a>
                 </div>
             </section>
         </>

@@ -9,8 +9,8 @@ export default function ToS() {
             <PageHead title="Terms & Conditions" lede="Short, because there's nothing to buy or sign up for." />
             <section className="wrap block">
                 <div className="prose">
-                    <p>This site is a personal project. It's provided as is, with no warranty.</p>
-                    <p>The checklists and the Help page are general information, not professional or legal advice. Every network is different. If you act on them, that's on you.</p>
+                    <p>This site is provided as is, with no warranty. Nothing on it is an offer to sell.</p>
+                    <p>The Help page is general information, not professional or legal advice.</p>
                     <p>Links to other sites are there for convenience. I don't control them.</p>
                     <p>You can use the brand kit to link to or write about Nullify. Don't use it to pretend to be Nullify.</p>
                     <p>These terms can change. The date below says when they last did.</p>

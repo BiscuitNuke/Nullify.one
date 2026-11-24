@@ -1,32 +1,9 @@
 import Link from "next/link";
 
 const cols = [
-    {
-        h: "Development",
-        links: [
-            { href: "/AI/", t: "AI Development" },
-            { href: "/Cybersec/", t: "Cybersecurity" },
-            { href: "/Devup/", t: "Development Updates" },
-            { href: "/Hardware/", t: "Hardware Development" },
-        ],
-    },
-    {
-        h: "Legal",
-        links: [
-            { href: "/ToS/", t: "Terms & Conditions" },
-            { href: "/Privacy/", t: "Privacy Policy" },
-            { href: "/Legal/", t: "Legal Information" },
-        ],
-    },
-    {
-        h: "Other",
-        links: [
-            { href: "/About/", t: "About NullifyOne" },
-            { href: "/Contact/", t: "Contact Us" },
-            { href: "/Help/", t: "Being attacked?" },
-            { href: "/Brand/", t: "Brand Kit" },
-        ],
-    },
+    { h: "Product", links: [{ href: "/Product/", t: "NullifyOne" }, { href: "/Product/#roadmap", t: "Roadmap" }, { href: "/Devup/", t: "Updates" }] },
+    { h: "Company", links: [{ href: "/About/", t: "About" }, { href: "/Contact/", t: "Contact" }, { href: "/Brand/", t: "Brand kit" }, { href: "/Help/", t: "Under attack?" }] },
+    { h: "Legal", links: [{ href: "/ToS/", t: "Terms" }, { href: "/Privacy/", t: "Privacy" }, { href: "/Legal/", t: "Legal" }] },
 ];
 
 export default function Footer() {
@@ -35,11 +12,10 @@ export default function Footer() {
             <div className="wrap foot-grid">
                 <div className="foot-id">
                     <img src="/brand/lockup-color.svg" alt="Nullify.one" width={168} height={27} />
-                    <p>Need help? <a href="mailto:kierana@nullify.one">Email us</a>.</p>
+                    <p>Network security for small offices and homes.</p>
                     <p className="social">
                         <a href="https://github.com/NullifyOne">GitHub</a>
-                        <a href="https://chipnuke.com/">chipnuke.com</a>
-                        <a href="https://ksw.dev/">ksw.dev</a>
+                                                <a href="https://ksw.dev/">ksw.dev</a>
                     </p>
                 </div>
                 {cols.map(c => (
@@ -53,7 +29,7 @@ export default function Footer() {
                     </div>
                 ))}
             </div>
-            <p className="wrap copy">NullifyOne © 2020–{new Date().getFullYear()}. A side project by Kieran Wittstruck.</p>
+            <p className="wrap copy">NullifyOne © 2020–{new Date().getFullYear()}.</p>
         </footer>
     );
 }
