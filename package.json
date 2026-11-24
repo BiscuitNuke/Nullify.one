@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "export": "echo \"Static export already done by next build (output: export). Files are in out/.\""
   },
   "dependencies": {
     "next": "^16.4.6",
