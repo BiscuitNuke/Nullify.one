@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Mark from "./components/mark";
+import Struck from "./components/strike";
 
 const problems = [
     { h: "Small networks get hit too", p: "Homes and small offices see the same scans, phishing and malware as large companies. They don't have a security team watching." },
@@ -28,7 +29,7 @@ export default function Home() {
                 <div className="wrap hero-grid">
                     <div>
                         <h1>
-                            <span className="struck">Complicated</span>{" "}
+                            <Struck>Complicated</Struck>{" "}
                             network security.
                         </h1>
                         <p className="lede">
@@ -86,6 +87,23 @@ export default function Home() {
                     ))}
                 </ul>
                 <p className="more"><Link href="/Devup/">Read the development updates</Link></p>
+            </section>
+
+            <section className="wrap block">
+                <h2>Need something today?</h2>
+                <p className="sub">Nullify isn&apos;t ready. These are.</p>
+                <div className="paths">
+                    <Link href="/Help/" className="path path-red">
+                        <span className="kicker">Right now</span>
+                        <strong>Being attacked?</strong>
+                        <span>Ransomware, hacked email, money sent to a scammer. What to do first and who to call.</span>
+                    </Link>
+                    <Link href="/Cybersec/" className="path">
+                        <span className="kicker">This week</span>
+                        <strong>Small network checklist</strong>
+                        <span>The free basics that stop most attacks on home and small-office networks.</span>
+                    </Link>
+                </div>
             </section>
 
             <section className="wrap">

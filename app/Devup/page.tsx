@@ -6,6 +6,18 @@ export const metadata: Metadata = { title: "Development Updates" };
 const updates = [
     {
         date: "2026-11-24",
+        title: "Help page and full pages",
+        items: [
+            "Being attacked? is now a real incident page. Pick what's happening, get the steps and who to call. It prints.",
+            "AI page: the pipeline, what the model looks at, which models come first, and how it gets tested.",
+            "Hardware page: how the box plugs in, target spec, and how it compares to what's already out there.",
+            "Cybersecurity page: a free checklist for small networks.",
+            "The red slashes through \"Complicated\" are a proper SVG now, drawn like the logo.",
+            "Added security.txt so researchers know where to report problems.",
+        ],
+    },
+    {
+        date: "2026-11-24",
         title: "Reboot",
         items: [
             "New site. Same pages as before, honest content this time.",
@@ -24,7 +36,7 @@ export default function Devup() {
             <section className="wrap block">
                 <ol className="updates">
                     {updates.map(u => (
-                        <li key={u.date}>
+                        <li key={u.date + u.title}>
                             <time dateTime={u.date}>{u.date}</time>
                             <div>
                                 <h2>{u.title}</h2>
