@@ -10,6 +10,7 @@ const updates = [
         items: [
             "New site. Same pages as before, honest content this time.",
             "New brand kit. Same N and slash, cleaned up. Get it on the Brand page.",
+            "New Being attacked? page with who to call.",
             "Luna the chatbot is gone.",
             "The old photo gallery is gone.",
         ],

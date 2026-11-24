@@ -23,6 +23,7 @@ const cols = [
         links: [
             { href: "/About/", t: "About NullifyOne" },
             { href: "/Contact/", t: "Contact Us" },
+            { href: "/Help/", t: "Being attacked?" },
             { href: "/Brand/", t: "Brand Kit" },
         ],
     },
@@ -33,7 +34,7 @@ export default function Footer() {
         <footer className="foot">
             <div className="wrap foot-grid">
                 <div className="foot-id">
-                    <img src="/brand/lockup-color.svg" alt="Nullify.one" width={168} height={30} />
+                    <img src="/brand/lockup-color.svg" alt="Nullify.one" width={168} height={27} />
                     <p>Need help? <a href="mailto:kierana@nullify.one">Email us</a>.</p>
                     <p className="social">
                         <a href="https://github.com/NullifyOne">GitHub</a>

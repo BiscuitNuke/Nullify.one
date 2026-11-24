@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Nav from "./components/nav";
+import TopBar from "./components/topbar";
 import Footer from "./components/footer";
 import "./globals.css";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body>
                 <a className="skip" href="#main">Skip to content</a>
+                <TopBar />
                 <Nav />
                 <main id="main">{children}</main>
                 <Footer />
